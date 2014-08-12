@@ -1,0 +1,732 @@
+<html>
+<head>
+	<title>豆瓣电影</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/doubanMovie.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/doubanMovie.js"></script>
+
+</head>
+
+<body>
+	<div id="dbNav">
+		<ul id="dbNavL">
+			<li>
+				<a href="#">豆瓣</a>
+			</li>
+			<li>
+				<a href="#">读书</a>
+			</li>
+			<li>
+				<a href="#">电影</a>
+			</li>
+			<li>
+				<a href="#">音乐</a>
+			</li>
+			<li>
+				<a href="#">同城</a>
+			</li>
+			<li>
+				<a href="#">小组</a>
+			</li>
+			<li>
+				<a href="#">阅读</a>
+			</li>
+			<li>
+				<a href="#">豆瓣FM</a>
+			</li>
+			<li>
+				<a href="#">东西</a>
+			</li>
+			<li>
+				<a href="#">更多</a>
+			</li>
+		</ul>
+		<div id="dbNavR">
+			<li>
+				<a href="#">注册</a>
+			</li>
+			<li>
+				<a href="#">登录</a>
+			</li>
+		</div>
+	</div>
+	<div id="dbMovieNav">
+		<div id="dmMovieNav1">
+			<div id="dmMovieNav1Content">
+				<div id="dmMovieLogo">
+					<a href="#"></a>
+				</div>
+				<div id="dmMovieSearch">
+					<div id="inp">
+						<input id="inp-query" size="22" maxlength="60" value placeholder="电影、影人、影院、电视剧" authocomplete="off" class="placeholder">
+					</div>
+					<div id="inp-btn">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dmMovieNav2">
+			<div id="dmMovieNav2Content">
+				<ul id="dmMovieNavContents">
+					<li>
+						<a href="#">影讯&购票</a>
+					</li>
+					<li>
+						<a href="#">选电影</a>
+						<img id="egg2" src="images/egg2.gif">
+					</li>
+					<li>
+						<a href="#">电视剧</a>
+					</li>
+					<li>
+						<a href="#">排行榜</a>
+					</li>
+					<li>
+						<a href="#">分类</a>
+					</li>
+					<li>
+						<a href="#">影评</a>
+					</li>
+					<li>
+						<a href="#">预告片</a>
+					</li>
+					<li>
+						<a href="#">问答</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="wrapper">
+		<div id="content">
+			<div id="contentLeft">
+				<div id="contentL1">
+					<div id="contentL1Tittle">
+						<h2>正在热映
+							<span>
+								<a href="#">全部正在热映»</a>
+							</span>
+							<span>
+								<a href="#">即将上映»</a>
+							</span>				
+						</h2>
+					</div>
+
+					<div id="contentL1Content">
+						<div class="movieItem">
+							<li>
+								<div class="poster">
+									<a href="#">
+										<img src="images/p2192465395.jpg">
+									</a>
+								</div>
+								<div class="movieName">
+									<a href="#">秦时明月之龙腾...</a>
+								</div>
+								<div class="rating">
+									<span class="rating-star allstar40"></span>
+									<span class="subject-rate">7.3</span>
+								</div>
+								<div class="ticket">
+									<span>
+										<a href="#">选座购票</a>
+									</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="poster">
+									<a href="#">
+										<img src="images/p2192302960.jpg">
+									</a>
+								</div>
+								<div class="movieName">
+									<a href="#">暴力街区...</a>
+								</div>
+								<div class="rating">
+									<span class="rating-star allstar35"></span>
+									<span class="subject-rate">7.1</span>
+								</div>
+								<div class="ticket">
+									<span>
+										<a href="#">选座购票</a>
+									</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="poster">
+									<a href="#">
+										<img src="images/p2193096799.jpg">
+									</a>
+								</div>
+								<div class="movieName">
+									<a href="#">神秘世界历险记...</a>
+								</div>
+								<div class="rating">
+									<span class="rating-star allstar30"></span>
+									<span class="subject-rate">5.8</span>
+								</div>
+								<div class="ticket">
+									<span>
+										<a href="#">选座购票</a>
+									</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="poster">
+									<a href="#">
+										<img src="images/p2192267510.jpg">
+									</a>
+								</div>
+								<div class="movieName">
+									<a href="#">后会无期</a>
+								</div>
+								<div class="rating">
+									<span class="rating-star allstar40"></span>
+									<span class="subject-rate">7.4</span>
+								</div>
+								<div class="ticket">
+									<span>
+										<a href="#">选座购票</a>
+									</span>
+								</div>
+							</li>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="contentL2">
+					<a href="#">
+						<img src="images/d3e804b40f1e3d8.jpg">
+					</a>
+				</div>
+				<div id="contentL3">
+					<div id="contentL3Tittlt">
+						<h2>
+							<a class="movie" href="#">选电影</a>
+							&nbsp;/&nbsp;
+							<a href="#">选电视剧</a>
+						</h2>
+						<div class="filter">
+							<div class="tags">
+								<ul>
+									<li id="xuanzhong">热门</li>
+									<li>最新</li>
+									<li>经典</li>
+									<li>可播放</li>
+									<li>豆瓣高分</li>
+									<li>冷门佳片</li>
+									<li>华语</li>
+									<li>欧美</li>
+									<li>韩国</li>
+									<li>日本</li>
+									<li>动作</li>
+									<li>喜剧</li>
+									<li>爱情</li>
+									<li>科幻</li>
+									<li>悬疑</li>
+									<li>恐怖</li>
+									<li>文艺</li>
+								</ul>
+							</div>
+							<div class="tool">
+							</div>
+						</div>
+					</div>
+					<div id="contentL3Content">
+						<div class="list">
+							<div class="lists">
+								<a href="#">
+									<div>
+										<img src="images/p2192302960.jpg">
+									</div>
+									<p>暴力街区
+										<strong>7.1</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p1977727734.jpg">
+									</div>
+									<p>少年斯派维的奇异旅行
+										<strong>8.5</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2184137484.jpg">
+									</div>
+									<p>吸大麻的孩子
+										<strong>6.2</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2160296350.jpg">
+									</div>
+									<p>我的兄弟情人
+										<strong>6.1</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2193297721.jpg">
+									</div>
+									<p>蝙蝠侠：突袭阿卡姆
+										<strong>7.8</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2167571462.jpg">
+									</div>
+									<p>机械心
+										<strong>7.8</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2187553783.jpg">
+									</div>
+									<p>人类清除计划2：无政府状态
+										<strong>6.1</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2132720832.jpg">
+									</div>
+									<p>想要拥抱你
+										<strong>7.2</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2191251262.jpg">
+									</div>
+									<p>敢死队3
+										<strong>6.4</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2193496403.jpg">
+									</div>
+									<p>分歧者：异类觉醒 
+										<strong>6.2</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2158166535.jpg">
+									</div>
+									<p>辩护人
+										<strong>9.1</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2166850749.jpg">
+									</div>
+									<p>她
+										<strong>8.4</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2163275943.jpg">
+									</div>
+									<p>布达佩斯大饭店
+										<strong>8.8</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2164912258.jpg">
+									</div>
+									<p>不求上进的玉子
+										<strong>7.3</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2154079590.jpg">
+									</div>
+									<p>如父如子
+										<strong>8.2</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2177744349.jpg">
+									</div>
+									<p>爱，简单
+										<strong>8.4</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2160195181.jpg">
+									</div>
+									<p>白日梦想家
+										<strong>8.2</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2178761206.jpg">
+									</div>
+									<p>最佳嫌疑人
+										<strong>5.8</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2174051294.jpg">
+									</div>
+									<p>情敌复仇战
+										<strong>6.5</strong>
+									</p>
+								</a>
+
+								<a href="#">
+									<div>
+										<img src="images/p2178995715.jpg">
+									</div>
+									<p>人间·小团圆
+										<strong>4.9</strong>
+									</p>
+								</a>
+							</div>
+							<div class="more">加载更多</div>
+						</div>
+					</div>
+				</div>
+				<div id="contentL4">
+					<div class="doulieTittle"><h2>热门豆列</h2></div>
+					
+					<div class="doulie">
+						<div class="doulist">
+							<div class="doulistLeft">
+								<img src="images/u3767744-2.jpg">
+							</div>
+							<div class="doulistRight">
+								<h3><a href="#">《看电影》杂志中文电影100强</a></h3>
+								<span>共100部影片&nbsp来自</span>
+								<a href="#">东方快车</a>
+							</div>
+						</div>
+						<div class="doulist">
+							<div class="doulistLeft">
+								<img src="images/u1005928-127.jpg">
+							</div>
+							<div class="doulistRight">
+								<h3><a href="#">2012 豆瓣电影【口碑榜】</a></h3>
+								<span>共255部影片&nbsp来自</span>
+								<a href="#">影志</a>
+							</div>
+						</div>
+						<div class="doulist">
+							<div class="doulistLeft">
+								<img src="images/u69290051-4.jpg">
+							</div>
+							<div class="doulistRight">
+								<h3><a href="#">罗杰·伊伯特传记《人生如戏》中提到的电影</a></h3>
+								<span>共56部影片&nbsp来自</span>
+								<a href="#">赏影猎人</a>
+							</div>
+						</div>
+						<div class="doulist">
+							<div class="doulistLeft">
+								<img src="images/u4748649-86.jpg">
+							</div>
+							<div class="doulistRight">
+								<h3><a href="#">BFI影史最伟大的50部纪录片</a></h3>
+								<span>共56部影片&nbsp来自</span>
+								<a href="#">养好胃</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="contentL5">
+					<a href="#">
+						<img src="images/98c8f3aafd992ce.jpg">
+					</a>
+				</div>
+				<div id="contentL6">
+					<h2>最受欢迎的影评
+						<span>
+							<a href="#">更多热门影评»</a>
+						</span>
+						<span>
+							<a href="#">新片影评»</a>
+						</span>			
+					</h2>
+					<div class="reviews">						
+						<div class="reviewsList">
+							<div class="reviewsListLeft">
+								<img src="images/p2192465395.jpg">
+							</div>
+							<div class="reviewsListRight">
+								<h3><a href="#">被欺骗得已经够了</a></h3>
+								<div class="review-meta">
+					                <a href="#">343罪恶火花</a>
+					                <span>评论</span>
+					                <a href="#">《秦时明月之龙腾万里》</a>
+									<span class="allstar10"></span>
+            					</div>
+            					<div class="review-content">  08.10补充 我是一个自由主义者我誓死捍卫你们骂我的权利 所以我希望你们看完我的发言再骂，记住，是看完，如果觉得太长废话太多，不看，那也谢谢你们点击，但是就请别瞎掺合了。另外也说明，我是一个反画质主义者，因为我发现很多人还没看...
+                    			<a href="#">(全文)</a>
+            					</div>
+							</div>
+						</div>
+						<div class="reviewsList">
+							<div class="reviewsListLeft">
+								<img src="images/p2187391526.jpg">
+							</div>
+							<div class="reviewsListRight">
+								<h3><a href="#">拥抱时间的流逝</a></h3>
+								<div class="review-meta">
+					                <a href="#">米粒 </a>
+					                <span>评论</span>
+					                <a href="#">《少年时代》</a>
+									<span class="allstar10"></span>
+            					</div>
+            					<div class="review-content"> 电影叫《少年时代》，剧情一句话概括起来也是“一个普通德州男孩6到18岁的人生”，但我觉得，林克莱特镜头下的主角是“时间”。电影里我们随处可见时间留下的印记：主角们用的通讯设备，从翻盖手机到iPhone4；各种电子游戏（这方面由于我是女生所以不太了...
+                    			<a href="#">(全文)</a>
+            					</div>
+							</div>
+						</div>
+						<div class="reviewsList">
+							<div class="reviewsListLeft">
+								<img src="images/p2194066391.jpg">
+							</div>
+							<div class="reviewsListRight">
+								<h3><a href="#">两年磨一刀：崛起的武侠电影《绣春刀》</a></h3>
+								<div class="review-meta">
+					                <a href="#">烟花醉 </a>
+					                <span>评论</span>
+					                <a href="#"> 《绣春刀》</a>
+									<span class="allstar10"></span>
+            					</div>
+            					<div class="review-content"> 赵客缦胡缨，吴钩霜雪明。银鞍照白马，飒沓如流星。 十步杀一人，千里不留行。事了拂衣去，深藏身与名。 ——李白《侠客行》 一切是静止的，听...
+                    			<a href="#">(全文)</a>
+            					</div>
+							</div>
+						</div>
+						<div class="reviewsList noborder">
+							<div class="reviewsListLeft">
+								<img src="images/p2190764206.jpg">
+							</div>
+							<div class="reviewsListRight">
+								<h3><a href="#">韩寒郭敬明黄晓明刷脸大成功 粉丝电影时代到来</a></h3>
+								<div class="review-meta">
+					                <a href="#">绵羊</a>
+					                <span>评论</span>
+					                <a href="#">《白发魔女传之明月天国》 </a>
+									<span class="allstar10"></span>
+            					</div>
+            					<div class="review-content"> 2014年的中国电影市场暑期档有三部电影分外引人注目，他们分别是韩寒的《后会无期》、黄晓明、范冰冰主演的《白发魔女之明月天国》以及郭敬明导演的《小时代3刺金时代》，这三部电影具有的共同特点是改编自知名小说，此外这三部电影的品质备受广泛质... 
+                    			<a href="#">(全文)</a>
+            					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contentRight">
+				<div id="contentR1">
+					<div id="sosuo">
+						<div id="city">
+							<span id="cityxiala">南京</span>
+							<div id="citylist">
+								<div id="citylist1">
+									<span>热门</span>
+									<span>A - G</span>
+									<span>H - L</span>
+									<span>M - T</span>
+									<span>W - Z</span>
+								</div>
+								<div id="citylist2">
+									<span>北京</span>
+									<span>上海</span>
+									<span>广州</span>
+									<span>深圳</span>
+									<span>武汉</span>
+									<span>成都</span>
+									<span>杭州</span>
+									<span>南京</span>
+									<span>西安</span>
+									<span>重庆</span>
+									<span>郑州</span>
+									<span>天津</span>
+									<span>长沙</span>
+									<span>苏州</span>
+									<span>福州</span>
+									<span>哈尔滨</span>
+									<span>沈阳</span>
+									<span>青岛</span>
+									<span>济南</span>
+									<span>温州</span>
+									<span>厦门</span>
+									<span>长春</span>
+									<span>大连</span>
+									<span>合肥</span>
+									<span>宁波</span>					
+								</div>
+							</div>
+						</div>
+						<div id="cinema"></div>
+					</div>
+				</div>
+				<div id="contentR2">
+					<div id="contentR2Content">
+						<a href="#">
+							<img src="images/21d5f930eef4181.jpg">
+						</a>
+					</div>
+				</div>
+				<div id="contentR3">
+					<div id="contentR3Content">
+						<div id="blist">
+							<div id="blistT">
+								甲壳虫八月电影推荐</div>
+						</div>
+						<ul id="blistC">
+							<li><a href="#">盗梦空间</a></li>
+							<li><a href="#">人再囧途之泰囧</a></li>
+							<li><a href="#">这个杀手不太冷</a></li>
+							<li><a href="#">三傻大闹宝莱坞</a></li>
+							<li><a href="#">少年派的奇幻漂流</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="contentR4">
+					<div id="koubeiTittle">
+						<h2>本周口碑榜
+							<span>
+								<a href="#">更多榜单»</a>
+							</span>		
+						</h2>
+					</div>
+					<ul class="koubei">
+						<li>
+							<span>1</span>
+							<a href="#">互联网之子</a>
+						</li>
+						<li>
+							<span>2</span>
+							<a href="#">熊世界</a>
+						</li>
+						<li>
+							<span>3</span>
+							<a href="#">另一个故乡</a>
+						</li>
+						<li>
+							<span>4</span>
+							<a href="#">绣春刀</a>
+						</li>
+						<li>
+							<span>5</span>
+							<a href="#">想要拥抱你</a>
+						</li>
+						<li>
+							<span>6</span>
+							<a href="#">龙之谷：破晓奇兵</a>
+						</li>
+						<li>
+							<span>7</span>
+							<a href="#">深狱父子情</a>
+						</li>
+						<li>
+							<span>8</span>
+							<a href="#">永远的0</a>
+						</li>
+						<li>
+							<span>9</span>
+							<a href="#">色衰应招男</a>
+						</li>
+						<li>
+							<span>10</span>
+							<a href="#">寻访千利休</a>
+						</li>	
+					</ul>
+				</div>
+				<div id="contentR5">
+					<div id="contentR5C">
+						<img src="images/3153cabd635275e.jpg">
+					</div>					
+				</div>
+				<div id="contentR6">
+					<h2>合作联系</h2>
+					<ul class="lianxi">
+						<li><a href="#">申请开通影片小站</a></li>
+						<li><a href="#">申请开通电影院小站</a></li>
+						<li class="mail">邮箱:</li>
+					</ul>
+				</div>
+				<div id="contentR7">
+					<a href="#">
+						<div id="contentR7C">						
+							<span class="app-icon"></span>
+							<div class="app-tittle">
+								<span class="main-tittle">豆瓣电影客户端</span>
+								<span class="sub-tittle">让买票看电影更简单</span>
+							</div>
+							
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footerLeft">© 2005－2014 douban.com, all rights reserved</div>
+			<div id="footerRight">
+				<a href="#">关于豆瓣</a>
+				·
+				<a href="#">在豆瓣工作</a>
+				·
+				<a href="#">联系我们</a>
+				·
+				<a href="#">免责声明</a>
+				·
+				<a href="#">帮助中心</a>
+				·
+				<a href="#">开发者</a>
+				·
+				<a href="#">手机电影</a>
+				·
+				<a href="#">豆瓣广告</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
