@@ -1,0 +1,99 @@
+*{margin: 0;padding: 0;}
+li,ul{list-style: none;}
+body{font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";font-size: 12px;color: #444;}
+div{display: block;}
+a{text-decoration: none;}
+
+#main{width: 100%;height: 650px;position: relative;}
+#backImg{width: 100%;height: 650px;position: absolute;z-index: -1;overflow: hidden;}
+#backImg img{width: 1353px;height: auto;margin-top: -125px;}
+.loginContent{width: 100%;height: auto;padding-top: 130px;}
+.logo{width: 395px;height: 129px;margin: 0 auto 15px auto;}
+.login{width: 548px;height: 246px;margin: 0 auto;position: relative;}
+
+.f1{width:395px;height: 108px;background-image: url("images/btn.png");background-position: 0 -2px;background-repeat: no-repeat;float: left;}
+.f2{width: 395px;font-size: 16px;font-weight: normal;letter-spacing: 15px;text-shadow:0 1px 1px rgba(0,0,0,0.2);color: #fff;float: left;}
+.f2 span{display: inline-block;letter-spacing: 9px;}
+
+.nav{width: 585px;height: 56px;position: relative;}
+
+#ZC{position: absolute;left: 0;top: 0;}
+#DL{position: absolute;left: 195px;top: 0;}
+#XZ{position: absolute;left: 390px;top: 0;}
+.tittle{width: 195px;height: 56px;float: left;background-color: rgba(17,17,17,0.5);}
+.tittle span{color: rgb(153,169,181);}
+.regtxt{width: 84px;height: 56px;margin-right: 8px;display: block;float: left;text-align: right;font-size: 18px;line-height: 56px;letter-spacing: 4px;}
+.tittle span:hover{color: #fff;}
+.acttxt{width: 102px;height: 36px;padding: 10px 0;display: block;float: left;}
+.acttxt span{width: 56px;float: left;}
+.acttxt span b{font-weight: normal;color: rgb(153,169,181);}
+.sep{float: left;width: 10px;height: 28px;margin-top: 4px;border-left: 1px solid #fff;opacity: 0.2;}
+.song{width: 24px;height: 24px;background-image: url("images/btn.png");background-position: -474px -824px;background-repeat: no-repeat;display: inline-block;}
+.denglu{width: 194px;height: 56px;display: block;float: left;text-align: center;font-size: 18px;line-height: 56px;letter-spacing: 4px;}
+.xiazai{width: 194px;height: 56px;display: block;float: left;text-align: center;font-size: 18px;line-height: 56px;letter-spacing: 4px;}
+
+.curr{background-color: #fff;}
+.curr span{color: #000;}
+.curr span:hover{color: #000;}
+
+.forms{background-color: #fff;padding: 30px;position: relative;color: #888;width: 525px;position: absolute;left: 0px;top: 56px;}
+#newReg{width: 524px;height: 130px;display: none;}
+#newLogin{width: 524px;height: 157px;}
+#newApp{}
+.contL{width: 302px;height: 100%;float: left;}
+.contR{width: 162px;height: auto;float: right;position: relative;}
+
+.w0{width: 302px;height: 40px;margin-bottom: -1px;display: block;}
+.w2{margin: 12px 0 0 0;display: block;cursor: pointer;}
+.w3{margin: 10px 0 0 0;display: block;}
+.inpt{width: 266px;height: 22px;font-size: 14px;line-height: 22px;padding: 8px 16px;border: 1px solid #d7d7d7;position: relative;}
+.inp-query{border: 0px;font-size: 14px;line-height: 22px;outline: 0}
+
+.sepln{position: absolute;left: -30px;top: 0;display: block;height: 90px;width: 1px;background-color: #e7e7e7;}
+.septxt{position: absolute;left: -30px;top: 36px;display: block;margin: 0 0 0 -6px;width: 20px;height: 20px;color: #aaa;background-color: #fff;}
+.w1{width: 162px;height: 40px;display: block;float: left;margin-bottom: 10px;}
+.sina{background-image: url("images/btn.png");background-position: -1px -601px;background-repeat: no-repeat;}
+.sina:hover{background-position: -199px -601px;}
+.qq{background-image: url("images/btn.png");background-position: -1px -651px;background-repeat: no-repeat;}
+.qq:hover{background-position: -199px -651px;}
+.rr{background-image: url("images/btn.png");background-position: -1px -701px;background-repeat: no-repeat;}
+.rr:hover{background-position: -199px -701px;}
+.btn3{color: #fff;padding-left: 54px;width: 107px;height: 40px;font-size: 14px;line-height: 40px;text-decoration: none;}
+.zhuceBtn{width: 300;height: 40px;background-image: url("images/btn.png");background-position: -1px -461px;background-repeat: no-repeat;}
+.zhuceBtn span{font-size: 18px;color: #fff;letter-spacing: 3px;text-align: center;display: block;line-height: 40px;}
+.zhuceBtn:hover{background-position: -1px -521px }
+.xuanze{width: 48px;height: 17px;padding-left: 24px;margin-right: 16px;display: block;position: relative;float: left;}
+.box{width: 16px;height: 16px;background-image: url("images/btn.png");background-position: -473px -783px;background-repeat: no-repeat;position: absolute;left: 0px;top: 0px; }
+.xuanze input{visibility: hidden;}
+.j-ok{background-position: -499px -783px;}
+.w3 a{color: #777;text-decoration: none;}
+.jzmm{float: left;}
+.wjmm{float: right;}
+
+.cont{display: inline-block;width: 100%;}
+h2{padding: 72px 0 16px 0; font-size: 46px;font-weight: normal;line-height: 56px;display: block;letter-spacing: 2px;text-align: center;}
+.sub{padding: 0 0 69px;font-size: 18px;line-height: 36px;text-align: center;}
+.sub a{color: #7594b3;}
+.img1{height: 588px;margin-bottom: 77px;background-image: url("images/dashboard.jpg");background-repeat: no-repeat;background-position: center top;display: block;}
+.img2{height: 620px;margin-bottom: 77px;background-image: url("images/quanzi.jpg");background-repeat: no-repeat;background-position: center top;display: block;}
+.img3{height: 650px;margin-bottom: 77px;background-image: url("images/mobilelofter.jpg");background-repeat: no-repeat;background-position: center top;display: block;}
+.img4{height: 640px;margin-bottom: 77px;background-image: url("images/uapp.jpg");background-repeat: no-repeat;background-position: center top;display: block;}
+.img5{height: 497px;background-image: url("images/art.jpg");background-repeat: no-repeat;background-position: center top;display: block;}
+
+
+.iconList{width: 960px;margin: 0 auto;width: 960px;}
+
+.iconList li{width: 400px;padding: 0 40px 64px;float: left;text-align: center;}
+.icon{width: 91px;height: 90px;display: inline-block;background-image: url("images/icon.png");background-repeat: no-repeat;}
+h3{margin: 25px 0 18px;font-size: 28px;font-weight: normal;line-height: 36px;}
+.iconList p{font-size: 14px;line-height: 28px;text-align: left;}
+.downloadbtn{}
+
+.icon1{background-position: -115px 0;}
+.icon2{background-position: -234px 0;}
+.icon3{background-position: -347px 0;}
+.icon4{background-position: -455px 0;}
+.icon5{background-position: -564px 0;}
+.icon6{background-position: -675px 0;}
+.icon7{background-position: -785px 0;}
+
