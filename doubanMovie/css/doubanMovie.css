@@ -38,7 +38,7 @@ img{border:0;}
 #inp{width: 470px;height: 34px;position: relative;left: -1px;text-align: center;float: left;background-image: url("images/nav_mv_bg.png");}
 #inp-btn{width: 37px;height: 34px;position: relative;left: -1px;float: left;background-image: url("images/nav_mv_bg.png");background-position: 0 -40px;}
 #inp-btn a{width: 37px;height: 34px;display: block;}
-#inp-query{width:96%;height: 30px;padding-left: 10px;float: left;border:0;outline: 0;text-align: left;background-color: #fff;}
+#inp-query{width:96%;height: 30px;padding-left: 10px;float: left;border:0;outline: 0;text-align: left;background-color: #fff;outline: 0;}
 .placeholder{color: #000;}
 
 

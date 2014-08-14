@@ -1,0 +1,85 @@
+*{margin: 0;padding: 0;}
+body{font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;}
+ul,li{list-style: none;}
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-thumb {border-radius: 10px;background: rgba(1,1,1,0.5);}
+
+.black{width: 100%;height: 100%;position: relative;}
+#bgImg{display: block;position: absolute;left: 0;top: 0;}
+.bgAllImg{width: 100%;height: 100%;}
+
+.wrap{width: 1000px;height: 100%;margin: 0 auto;}
+#mainContainer{width: 280px;height: 100%;float: left;}
+#subContainer{width: 700px;height: 100%;float: left;margin-left: 20px;}
+
+.main-panel{width: 280px;background-color: #fff;border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+			position: relative;display: block;height: 80%;top: 12%;}
+.panel-body{width: 100%;display: block;float: left;position: absolute;z-index: 1;top: 0;left: 0;bottom: 50px;}
+#footer{width: 100%;height: 50px;display: block;float: left;position: absolute;left: 0;bottom: 0;z-index: 2;}
+
+.panel{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.selected{display: block;}
+
+
+
+/*用户信息*/
+.accountHeader{width: 100%;height:auto;display: block;position: absolute;top: -50px;left: 0;}
+.user-header{width: 40px;height: 40px;border:3px solid #fff;position: absolute;left: 20px;top: -22px;}
+.user-name{width: 148px;height: 22px;margin-left: 77px;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;
+			position: absolute;top: -21px;font-size: 16px;}
+.user-online-state{width: 10px;height:10px;background-image: url("images/state_sprite.gif");
+					background-repeat: no-repeat;position: absolute;right: 0;bottom: 0;}
+.state-online{background-position: 0 0;}
+
+.icon-list{position: absolute;left: 20px;top: 30px;}
+.icon-list a{width: 15px;height: 15px;margin-right: 8px;background-image: url("images/icons_list.png");background-repeat: no-repeat;float: left;}
+.i_qzone{background-position: 0 0;}
+.i_mail{background-position: -20px 0;}
+.i_weibo{background-position: -40px 0;}
+.i_video{background-position: -60px 0;}
+.i_qqwebsite{background-position: -81px 0;}
+.i_music{background-position: -103px 0;}
+.i_wallet{background-position: -124px 0;}
+.i_pengyou{background-position: -144px 0;}
+.i_weiyun{background-position: -166px 0;}
+
+
+.panel-header{width: 100%;height: 45px;display: block;float: left;border-radius: 6px 6px 0 0;}
+.panel-header h1{font-size: 18px;line-height: 100%;font-weight: 400;text-align: center;color: #fff;padding: 0.75em 0.45em;}
+.padding-20{padding-left: 20px;padding-right: 30px;}
+.currentList{width: 100%;position: absolute;left: 0;top: 45px;bottom: 0;}
+/*会话*/
+.recent{width: 100%;overflow-x:hidden;overflow-y:scroll;height: 100%;}
+.recent li{position: relative;border-top: 1px solid #e3e3e3;padding: 0.15em 1px;line-height: 100%;cursor: pointer;
+		width: 100%;height: 60px;display: block;overflow: hidden;}
+.recent li:first-child{border-top-width: 0;}
+.recent li:last-child{border-bottom: 0;}
+.avatar{width: 40px;height: 40px;}
+.recent .avatar{float: left;position: relative;margin: 8px;}
+.nember-name{padding: 6px 0 0 5px;line-height: 23px;height: 22px;overflow: hidden;display: block;}
+
+
+
+/*footer*/
+.foot-nav li{position: relative;height: 50px;border-right: 1px solid #222;border-left: 1px solid #555;cursor: pointer;
+			color: #ccc;font-size: 14px;text-align: center;text-shadow:0 -1px 0 #000;padding: 0 17px;float: left;}
+.foot-nav ul{display: inline-block;}
+.foot-nav li a{display: inline-block;overflow: hidden;height: 100%;position: relative;}
+.foot-nav a span{display: block;position: relative;bottom: 2px;width: 100%;font-size: 12px;}
+.foot-nav li:first-child{border-left: 0;border-bottom-left-radius: 7px;}
+.foot-nav li:last-child{border-right: 0;border-bottom-right-radius: 7px;}
+.backColor{background: linear-gradient(#555,#222);}
+
+.icon{width: 34px;height: 34px;background-size: 100% 100%;display: inline-block;}
+.talk{display: inline-block;}
+.contact{display: inline-block;}
+.discover{display: inline-block;}
+.setting{display: inline-block;}
+.icon-talk{background-image: url("images/tab_icon_conversation.png");background-repeat: no-repeat;}
+.icon-contact{background-image: url("images/tab_icon_contact.png");background-repeat: no-repeat;}
+.icon-discover{background-image: url("images/tab_icon_plugin.png");background-repeat: no-repeat;}
+.icon-setting{background-image: url("images/tab_icon_setup.png");background-repeat: no-repeat;}
+
+.nav-selected{text-shadow:0 1px 0 #000;background: #333;border-left-color: #222;color: #fff;box-shadow: inset 0 0 10px #111;}
+
+

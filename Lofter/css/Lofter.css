@@ -37,9 +37,18 @@ a{text-decoration: none;}
 .curr span:hover{color: #000;}
 
 .forms{background-color: #fff;padding: 30px;position: relative;color: #888;width: 525px;position: absolute;left: 0px;top: 56px;}
-#newReg{width: 524px;height: 130px;display: none;}
-#newLogin{width: 524px;height: 157px;}
-#newApp{}
+#newReg{width: 524px;height: 130px;}
+#newLogin{width: 524px;height: 157px;display: none;}
+#newApp{width: 485px;height: 142px;padding: 10px 20px;display: none;}
+#newApp ul{display: inline-block;height: auto;}
+.appList{width: 100px;height: 142px;margin-right: 92px;display: block;float: left;}
+.appList img{display: block;margin-bottom: 15px;}
+.nomargin{margin-right: 0px;}
+.btn2{width: 65px;height: 28px;padding: 0 0 0 34px;line-height: 26px;text-align: left;font-size: 15px;color: #fff;background-image: url("images/btn.png");background-position: -1px -781px;background-repeat: no-repeat;display: block;}
+.iPad{width: 54px;padding: 0 0 0 45px;background-position: -110px -781px;display: block;}
+.Android{width: 67px;padding: 0 0 0 32px;background-position: -219px -781px;display: block;}
+
+
 .contL{width: 302px;height: 100%;float: left;}
 .contR{width: 162px;height: auto;float: right;position: relative;}
 
