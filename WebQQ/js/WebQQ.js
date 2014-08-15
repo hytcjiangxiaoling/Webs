@@ -1,4 +1,6 @@
 $(function(){
+
+
 	$("#talk").click(function(){
 		$(".icon-talk").css({"background-image":'url("./css/images/tab_icon_conversation_selected.png")'});
 		$(".icon-contact").css({"background-image":'url("./css/images/tab_icon_contact.png")'});
@@ -69,6 +71,8 @@ $(function(){
 		$(this).next().toggle();
 	});
 
+
+	
 
 	
 });

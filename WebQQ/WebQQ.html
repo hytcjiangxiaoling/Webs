@@ -2,14 +2,18 @@
 <head>
 	<title>WebQQ</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link href="css/WebQQ.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	 <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/WebQQ.js"></script>
+
 </head>
 <body>
 	<div class="black">
 		<div id="bgImg">
-			<img class="bgAllImg" src="images/3.jpg">
+			<div class="bgAllImg">123123
+			</div>
 		</div>
 		<div class="wrap">
 			<div id="mainContainer">				
@@ -522,11 +526,23 @@
 								</a>
 							</li>
 						</ul>
+						<div class="wallpaper-ctrl">
+							<a class="ctrl-left" href="#"></a>
+							<a class="ctrl-Right" href="#"></a>
+						</div>
 					</div>
-				</div>
-			
-				
+				</div>				
 			</div>
+
+			<script>
+				  $(function() {
+				    $( ".chat-panel" ).draggable({ handle: ".panel-header",containment: "#subContainer", scroll: false  });
+				  });
+				  $(function() {
+				    $( ".chat-panel" ).resizable();
+				  });
+		  	</script>
+
 			<div id="subContainer">
 				<div class="chat-panel">
 					<div class="panel-header backColor">
@@ -535,13 +551,11 @@
 					
 					<div class="main-chat">
 					</div>
-					<div class="chat-footrt backColor"></div>
-				</div>
 
-				<div id="resizable" class="ui-widget-content">
-  					<h3 class="ui-widget-header">Resizable</h3>
-				</div>
+					<div class="chat-footrt backColor"></div>
+				</div>				
 			</div>
+
 		</div>
 	</div>
 

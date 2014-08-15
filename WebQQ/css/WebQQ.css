@@ -4,13 +4,13 @@ ul,li{list-style: none;}
 ::-webkit-scrollbar {width: 4px;}
 ::-webkit-scrollbar-thumb {border-radius: 10px;background: rgba(1,1,1,0.5);}
 
-.black{width: 100%;height: 100%;position: relative;}
-#bgImg{display: block;position: absolute;left: 0;top: 0;}
-.bgAllImg{width: 100%;height: 100%;}
+.black{width: 100%;height: 100%;position: relative;min-width: 1200px;}
+#bgImg{display: block;position: absolute;left: 0;top: 0;right: 0;bottom: 0;z-index: 2;}
+.bgAllImg{width: 100%;height: 100%;background-image: url("images/1.jpg");background-repeat: no-repeat;}
 
-.wrap{width: 1000px;height: 100%;margin: 0 auto;}
-#mainContainer{width: 280px;height: 100%;float: left;}
-#subContainer{width: 700px;height: 100%;float: left;margin-left: 20px;}
+.wrap{width: 97%;height: 99%;margin: 0 auto;position: relative;}
+#mainContainer{width: 280px;height: 100%;float: left;position: absolute;left: 0;}
+#subContainer{height: 100%;float: left;margin-left: 20px;position: absolute;left: 280px;right: 0px;}
 
 .main-panel{width: 280px;background-color: #fff;border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 			position: relative;display: block;height: 80%;top: 12%;}
@@ -125,11 +125,14 @@ ul,li{list-style: none;}
 .icon-setting{background-image: url("images/tab_icon_setup.png");background-repeat: no-repeat;}
 
 .nav-selected{text-shadow:0 1px 0 #000;background: #333;border-left-color: #222;color: #fff;box-shadow: inset 0 0 10px #111;}
-
-
+.wallpaper-ctrl{position: absolute;left:110px;bottom: -34px;}
+.ctrl-left{background-image: url("images/arrow.png");background-repeat: no-repeat;background-position: -2px -2px;width: 19px;height: 19px;margin: 0 3px;display: inline-block;float: left;}
+.ctrl-left:hover{background-position: -3px -42px;}
+.ctrl-Right{background-image: url("images/arrow.png");background-repeat: no-repeat;background-position: -25px -2px;width: 19px;height: 19px;margin: 0 3px;display: inline-block;float: left;}
+.ctrl-Right:hover{background-position: -26px -42px;}
 
 /*聊天窗口*/
-.chat-panel{width: 100%;background-color: #fff;border-radius: 7px;position: relative;display: block;height: 80%;top: 12%;position: relative;}
+.chat-panel{width:700px;max-width: 700px;min-width: 400px;max-height:80% ;min-height: 400px;background-color: #fff;border-radius: 7px;position: relative;display: block;height: 80%;top: 12%;position: relative;}
 .main-chat{width: 100%;position: absolute;top: 45px;bottom: 50px;}
 
 .chat-footrt{width: 100%;height: 50px;padding: 3px 10px 5px 6px;border-radius: 0 0 5px 5px;position: absolute;left: 0;bottom: 0;box-sizing:border-box;}
