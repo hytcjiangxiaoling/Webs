@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;}
 body{font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;}
 ul,li{list-style: none;}
-::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar {width: 4px;}
 ::-webkit-scrollbar-thumb {border-radius: 10px;background: rgba(1,1,1,0.5);}
 
 .black{width: 100%;height: 100%;position: relative;}
@@ -48,15 +48,59 @@ ul,li{list-style: none;}
 .panel-header h1{font-size: 18px;line-height: 100%;font-weight: 400;text-align: center;color: #fff;padding: 0.75em 0.45em;}
 .padding-20{padding-left: 20px;padding-right: 30px;}
 .currentList{width: 100%;position: absolute;left: 0;top: 45px;bottom: 0;}
+
+
+#panel-1{display: block;}
+#panel-2{display: none;}
+#panel-3{display: none;}
+#panel-4{display: none;}
+
+#haoyouList{display: block;}
+#qunList{display: none;}
+#zuList{display: none;}
+
+
 /*会话*/
 .recent{width: 100%;overflow-x:hidden;overflow-y:scroll;height: 100%;}
 .recent li{position: relative;border-top: 1px solid #e3e3e3;padding: 0.15em 1px;line-height: 100%;cursor: pointer;
-		width: 100%;height: 60px;display: block;overflow: hidden;}
+		width: 100%;height: 61px;display: block;overflow: hidden;background:linear-gradient(#fff,#f1f1f1); box-sizing:border-box;}
 .recent li:first-child{border-top-width: 0;}
 .recent li:last-child{border-bottom: 0;}
 .avatar{width: 40px;height: 40px;}
 .recent .avatar{float: left;position: relative;margin: 8px;}
 .nember-name{padding: 6px 0 0 5px;line-height: 23px;height: 22px;overflow: hidden;display: block;}
+/*联系人*/
+.memberTab{width: 100%;height: 39px;display: block;float: left;}
+.memberTab li{width: 33.33%;padding: 0.65em 12px;cursor: pointer;
+		text-align: center;font-size: 16px;line-height: 16px;display:inline-block;float: left;box-sizing:border-box;}
+.memberTab li:first-child{border-left: 0;}
+.memberTab li:last-child{border-right: 0;}
+.friend{border-bottom: 2px solid #ccc;box-shadow: 10px 0 0 -9px #ccc;}
+.group{border-bottom: 2px solid #ccc;box-shadow: 10px 0 0 -9px #ccc;}
+.discuss{border-bottom: 2px solid #ccc;}
+.active{border-bottom-color: #0aa7ff;color: #0aa7ff;}
+.friendList{position: absolute;bottom: 0;top: 39px;width: 100%;overflow-x:hidden;overflow-y:scroll;}
+.list_group{display: block;position: relative;cursor: pointer;border-bottom: 1px solid #ccc;}
+.groupTittle{padding: 0.65em 24px 0.75em 28px;}
+.list-arrow{background-image: url("images/open_arrow.png");background-size: 14px 14px;background-repeat: no-repeat;background-position: 12px;}
+.groupTittle span{font-size: 16px;line-height: 16px;}
+.groupTittle span.onlinePercent{color: gray;font-size: 12px;float: right;line-height: 20px;}
+.groupList{position: absolute;bottom: 0;top: 39px;width: 100%;overflow-x:hidden;overflow-y:scroll;}
+.groupList li{position: relative;border-top: 1px solid #e3e3e3;padding: 0.15em 1px;line-height: 100%;cursor: pointer;
+		width: 100%;height: 61px;display: block;overflow: hidden;background:whitesmoke; box-sizing:border-box;}
+.groupList li:first-child{border-top-width: 0;}
+.groupList li:last-child{border-bottom: 0;}
+.groupList .avatar{float: left;position: relative;margin: 8px;}
+.discussList{position: absolute;bottom: 0;top: 39px;width: 100%;overflow-x:hidden;overflow-y:scroll;}
+/*好友列表*/
+.friendLists{width: 100%;overflow-x:hidden;overflow-y:scroll;height:auto;display: none;}
+.friendLists li{position: relative;border-top: 1px solid #e3e3e3;padding: 0.15em 1px;line-height: 100%;cursor: pointer;
+		width: 100%;height: 61px;display: block;overflow: hidden;background:whitesmoke;box-sizing:border-box; }
+
+.friendLists li:last-child{border-bottom: 0;}
+.friendLists .avatar{float: left;position: relative;margin: 8px;}
+.menber-state{font-size: 12px;color: #aaa;line-height: 28px;padding-left: 5px;display: block;white-space: nowrap;position: absolute;top: 32px;left: 56px;}
+
 
 
 
@@ -75,11 +119,20 @@ ul,li{list-style: none;}
 .contact{display: inline-block;}
 .discover{display: inline-block;}
 .setting{display: inline-block;}
-.icon-talk{background-image: url("images/tab_icon_conversation.png");background-repeat: no-repeat;}
+.icon-talk{background-image: url("images/tab_icon_conversation_selected.png");background-repeat: no-repeat;}
 .icon-contact{background-image: url("images/tab_icon_contact.png");background-repeat: no-repeat;}
 .icon-discover{background-image: url("images/tab_icon_plugin.png");background-repeat: no-repeat;}
 .icon-setting{background-image: url("images/tab_icon_setup.png");background-repeat: no-repeat;}
 
 .nav-selected{text-shadow:0 1px 0 #000;background: #333;border-left-color: #222;color: #fff;box-shadow: inset 0 0 10px #111;}
+
+
+
+/*聊天窗口*/
+.chat-panel{width: 100%;background-color: #fff;border-radius: 7px;position: relative;display: block;height: 80%;top: 12%;position: relative;}
+.main-chat{width: 100%;position: absolute;top: 45px;bottom: 50px;}
+
+.chat-footrt{width: 100%;height: 50px;padding: 3px 10px 5px 6px;border-radius: 0 0 5px 5px;position: absolute;left: 0;bottom: 0;box-sizing:border-box;}
+
 
 
