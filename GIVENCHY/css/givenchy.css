@@ -33,15 +33,18 @@ body{
 #layer-2{width: 973px;height: 1841px;}
 #layer-3{width: 973px;height: 2210px;}
 #layer-4{width: 973px;height: 2210px;}
-#footer{width: 100%;height: 41px;padding: 80px 0 120px 0;float: left;}
-
+#footer{width: 100%;height: 41px;padding: 120px 0 120px 0;float: left;display: block;}
 
 
 /*#layer-0*/
 .house-item{width: 313px;height: 489px;display: block;float: left;}
 .fengxi{margin-right: 17px;}
-.housePic{width: 313px;height: 425px;}
-.housePic img{width: 313px;height: 425px;}
+.housePic{width: 313px;height: 425px;background: #000;position: relative;}
+.housePic img{width: 313px;height: 425px;opacity: 1;}
+.picto{position: absolute;width: 69px;height: 68px;margin: 20px 0 0 20px;z-index: 20px;left: 0;top: 0;
+		background: url("images/sprite-ui.png");background-repeat: no-repeat;background-position: 0 0;display: none;}
+
+
 .PicInfo{width: 100%;height: 26px;margin: 21px auto;line-height: 13px;float: left;display: block;float: left;}
 .pic-tittle p{width: 100%;font-weight: normal;font-family: Arial,sans-serif;font-size: 12px;text-align: left;display: block;float: left;}
 .pic-date{width: 100%;font-family: Arial,sans-serif;font-size: 12px;text-align: left;display: block;float: left;}
@@ -49,13 +52,13 @@ body{
 .news-tittle{text-align: center;padding:  0 0 35px;width: 973px;height: 16px;line-height: 16px;font-size: 12px;}
 .column-item{width: 478px;height: 100%;float: left;}
 .column-items{width: 478px;height: auto;display: block;float: left;}
-.columnPic-0{width: 478px;height: 306px;display: block;float: left;}
-.columnPic-0 img{width: 478px;height: 306px;}
+.columnPic-0{width: 478px;height: 306px;display: block;float: left;background: #000;position: relative;}
+.columnPic-0 img{width: 478px;height: 306px;opacity: 0.5;}
 .PicInfo{width: 100%;height: 26px;margin: 21px auto;line-height: 13px;float: left;display: block;float: left;}
 .pic-tittle p{width: 100%;font-weight: normal;font-family: Arial,sans-serif;font-size: 12px;text-align: left;display: block;float: left;}
 .pic-date{width: 100%;font-family: Arial,sans-serif;font-size: 12px;text-align: left;display: block;float: left;}
-.columnPic-1{width: 478px;height: 672px;}
-.columnPic-1 img{width: 478px;height: 672px;}
+.columnPic-1{width: 478px;height: 672px;background: #000;position: relative;}
+.columnPic-1 img{width: 478px;height: 672px;opacity: 0.5;}
 
 
 

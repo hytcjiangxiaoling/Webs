@@ -1,13 +1,65 @@
 div{text-align:center;font-size: 12px;}
-body{text-align: center;font-size: 12px;font-family: 宋体,Arial;}
+body{text-align: center;font-size: 12px;font-family: 宋体,Arial;background:linear-gradient(#EBEBEB,#ffffff);}
 ul,li{ list-style: none; list-style-position: outside; }
 *{margin: 0;padding: 0;}
-#content{width: 840px;height: 460px;text-align: center;margin: auto;margin-top: 50px;}
-.webLogo{width: 200px;height: 220px;margin: auto;float: left;display: block;padding:5px;border-radius:20px;}
-.webLogo a{text-decoration: none;line-height: 30px;text-align: center;color: rgb(100,100,100);display: block;}
-#suoyin{width: 500px;height: 28px;text-align: center;margin: auto;margin-top: 30px;text-decoration: none;line-height: 30px;font-size: 36px;font-weight: bold;color: #888;}
+a{text-decoration: none;}
 
-#ditC{width: 430px;height: 30px;padding: 15px;margin: 20px auto;}
+#content{
+	width: 840px;
+	height: 460px;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	}
+.webLogo{
+	width: 200px;
+	height: 220px;
+	margin: auto;
+	float: left;
+	display: block;
+	padding:5px;
+	border-radius:20px;
+	border: 1px solid rgb(190, 205, 240);
+	background: linear-gradient(#EDEDED,#FFE1FF);
+	box-sizing:border-box;
+	}
+.webLogo a{
+	text-decoration: none;
+	line-height: 30px;
+	text-align: center;color: rgb(100,100,100);
+	display: block;
+	font-size: 20px;
+	font-family: 微软雅黑;
+	line-height: 220px;
+	}
+#suoyin{
+	position: relative;
+	width: 500px;
+	height: 28px;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #888;
+	}
+.return{
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+	}
+.return a{
+	color: rgb(120,120,120);
+	font-size: 16px;
+	}
+#ditC{
+	width: 430px;
+	height: 30px;
+	padding: 15px;
+	margin: 20px auto;
+	}
 #ditDataA{width: 200px;height: 30px;float: left;}
 #ditDataB{width: 160px;height: 30px;float: right;}
 .dit{width: 20px;height: 30px;background-image: url("images/dig.png");float: left;}

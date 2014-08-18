@@ -1,7 +1,7 @@
 $(function(){
 	$(".webLogo").hover(function(){
 		$(this).css({			
-			"box-shadow":"1px 1px 10px rgb(170, 195, 220)"
+			"box-shadow":"3px 3px 25px rgb(170, 195, 220)"
 		});
 	},function(){
 		$(this).css({

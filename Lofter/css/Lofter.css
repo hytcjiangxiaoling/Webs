@@ -5,8 +5,18 @@ div{display: block;}
 a{text-decoration: none;}
 
 #main{width: 100%;height: 650px;position: relative;}
-#backImg{width: 100%;height: 650px;position: absolute;z-index: -1;overflow: hidden;}
-#backImg img{width: 1353px;height: auto;margin-top: -125px;}
+#backImg{width: 100%;height: 650px;position: absolute;z-index: -1;overflow: hidden;background-image: url("images/1.jpg");background-size: 100% 120%;}
+/*#backImg img{width: 1353px;height: auto;margin-top: -125px;}*/
+
+.wallpaper-ctrl{position: absolute;right:150px;bottom: 50px;}
+#ctrl-left{background-image: url("images/arrow.png");background-repeat: no-repeat;background-position: -2px -2px;width: 19px;height: 19px;margin: 0 3px;display: inline-block;float: left;}
+#ctrl-left:hover{background-position: -3px -42px;}
+#ctrl-Right{background-image: url("images/arrow.png");background-repeat: no-repeat;background-position: -25px -2px;width: 19px;height: 19px;margin: 0 3px;display: inline-block;float: left;}
+#ctrl-Right:hover{background-position: -26px -42px;}
+
+
+
+
 .loginContent{width: 100%;height: auto;padding-top: 130px;}
 .logo{width: 395px;height: 129px;margin: 0 auto 15px auto;}
 .login{width: 548px;height: 246px;margin: 0 auto;position: relative;}

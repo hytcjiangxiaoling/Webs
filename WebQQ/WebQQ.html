@@ -12,7 +12,8 @@
 <body>
 	<div class="black">
 		<div id="bgImg">
-			<div class="bgAllImg">123123
+			<div class="bgAllImg">
+				<!-- <img src="images/1.jpg"> -->
 			</div>
 		</div>
 		<div class="wrap">
@@ -527,8 +528,8 @@
 							</li>
 						</ul>
 						<div class="wallpaper-ctrl">
-							<a class="ctrl-left" href="#"></a>
-							<a class="ctrl-Right" href="#"></a>
+							<div id="ctrl-Left" href="#"></div>
+							<div id="ctrl-Right" href="#"></div>
 						</div>
 					</div>
 				</div>				
@@ -546,13 +547,34 @@
 			<div id="subContainer">
 				<div class="chat-panel">
 					<div class="panel-header backColor">
-						<ul class="chatList"></ul>
+						<h1>蝉想</h1>
+						<button id="min"><span>最小化</span></button>
+						<button id="close"><span>关闭</span></button>
 					</div>
 					
 					<div class="main-chat">
+						<div class="chat-container"></div>
 					</div>
 
-					<div class="chat-footrt backColor"></div>
+					<div class="chat-footrt ">
+						<div class="chat-foot-content">
+							<div class="shuru backColor">
+								<div id="add-face-btn">
+									<span class="add-face-btn-icon"></span>
+								</div>
+								<div class="chat-textarea">
+									<textarea id="textarea"></textarea>	
+								</div>								
+								<button id="send-chat-btn">
+									<span class="btn-text">发送</span>
+								</button>
+							</div>
+							<div class="biaoqing">
+								<ul></ul>
+								<ul></ul>
+							</div>
+						</div>	
+					</div>
 				</div>				
 			</div>
 

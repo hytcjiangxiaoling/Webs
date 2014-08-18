@@ -1,5 +1,32 @@
-$(function(){
+$(function(){	
 
+		 /*更换背景图片*/
+		  
+		  var index=2;
+		  $("#ctrl-Left").click(function(){
+
+		    if (index==1) {
+		      index=14;
+		      $(".bgAllImg").css("background-image","url('images/"+index+".jpg')");
+		    }
+		    else{
+		      index--;
+		      $(".bgAllImg").css("background-image","url('images/"+index+".jpg')");
+		      
+		    }
+		  });
+
+		  $("#ctrl-Right").click(function(){		    
+		    if (index==14) {
+		      index=1;
+		      $(".bgAllImg").css("background-image","url('images/"+index+".jpg')");
+		    }
+		    else{		     
+		      index++;
+		      $(".bgAllImg").css("background-image","url('images/"+index+".jpg')");
+		      
+		    }
+		  });
 
 	$("#talk").click(function(){
 		$(".icon-talk").css({"background-image":'url("./css/images/tab_icon_conversation_selected.png")'});

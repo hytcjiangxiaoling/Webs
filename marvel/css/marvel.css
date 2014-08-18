@@ -1,5 +1,13 @@
 *{margin: 0;padding: 0;}
+a{text-decoration: none;}
 
 #header{background-color: #222222;}
 #headerAds{width: 970px;height: 66px;padding: 10px;margin: 0 auto 0 auto;color: #8a8a8a;}
-#headerNav{width: 100%;height: 82px;min-width: 906px;background-color: #000;}
+#headerNavContainer{width: 100%;height: 82px;min-width: 906px;background-color: #000;}
+#headerNav{width: 940px;height: 82px;margin: 0 auto;}
+#headerNav h1{background-color: #f0141e;line-height: 100%;}
+#headerNav h1 a{font-size: 76px;line-height: 115%;padding: 0 2px;color: #fff;text-shadow:1px 1px 1px #c40d15;}
+
+
+
+
