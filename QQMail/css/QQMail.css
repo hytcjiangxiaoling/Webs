@@ -6,24 +6,54 @@ a{text-decoration: none;}
 #main{width: 100%;height: 100%;position: relative;}
 #topNav{width: 100%;height: 66px;}
 .logoTips{position: absolute;left: 5px;}
-.logo{width: 215px;height: 60px;display: block;float: left;background: url("images/logo_80_0104473.gif");cursor: pointer;}
-.switch{display: block;float: left;margin: 12px 0 0;line-height: 18px;}
+.logo{width: 215px;height: 60px;display: block;float: left;background: url("images/logo_24_0104473.gif");cursor: pointer;}
+.switch{display: block;float: left;margin: 12px 0 0;line-height: 18px;color: #2c4a77;}
 .switchContent{margin-top: 1px;}
 .pointer{cursor: pointer;}
 #userAddrArrow{font-size: 11px;font-family: Arial,sans-serif;padding-bottom: 5px;opacity: 0.5;}
-.addrTittle{color: #9399a7;}
-.addrTittle a{color: #4E5D80;}
+#userAddrContainer{font-family:"lucida Grande",Verdana;}
+.addrTittle{}
+.addrTittle a{color:#2C4A77;}
 .addrTittle a:hover{text-decoration: underline;}
 
 
 
 .help{position: absolute;}
-.topLine{position:absolute;top:66px;left:0;right:0;width: auto;border-left: 8px solid #fff;height: 11px;border-right: 0;
-	background: url("images/nav_bg104470.gif");background-repeat: repeat-x;background-position: 0 -107px;background-color: transparent;}
-.topLineImg{width: 184px;height: 22px;float: left;background: url("images/topline104470.gif");background-position:-179px 0;background-color: transparent;}
-#left{width: 179px;position: absolute;top: 77px;bottom: 0;display: block;border-left: 8px solid #fff;border-right: 1px solid #9b9b9b;}
+.topLine{width: auto;height: 3px;padding-top: 4px;position:absolute;top:66px;left:0;right:0;width: auto;height: 11px;border-right: 0;
+	background: url("images/top_linebg104473.gif");background-repeat: repeat-x;background-color: transparent;}
+.topLineImg{width: 187px;height: 7px;background: #f5f5f5;border-right: 1px solid #e2e2e2;float: left;}
 
 
+#left{position: absolute;width: 187px;height: auto;top: 77px;left: 0;bottom: 0;display: block;border-right: 1px solid #E2E2E2;background: #f5f5f5;}
+#navBarDiv{}
+.navBar{width: auto;height: 94px;border-bottom: 1px solid #e2e2e2;display: block;}
+.fs{margin-left: 5px;margin-right: 5px;line-height: 12px;}
+.fs a{padding-left: 48px;height: 24px;color: #3B5999;display: block;font-weight: bold;font-size: 14px;font-family: "lucida Grande",Verdana;line-height: 12px;}
+.compose{margin-top:6px;padding: 2px 0 0;height: 24px;display: block;}
+.check{margin-top:6px;height: 24px;display: block;}
+.address{margin-top:6px;height: 24px;display: block;}
+.composeBtn{margin-left: 18px;float: left;border: 0;padding: 0;width: 20px;height: 20px;margin-top: -26px;background-image: url("images/cca104472.gif");background-position: 0 -1px;background-repeat: no-repeat;display: block;}
+.checkBtn{margin-left: 18px;float: left;border: 0;padding: 0;width: 20px;height: 20px;margin-top: -26px;background-image: url("images/cca104472.gif");background-position: 0 -33px;background-repeat: no-repeat;display: block;}
+.addrBtn{margin-left: 18px;float: left;border: 0;padding: 0;width: 20px;height: 20px;margin-top: -26px;background-image: url("images/cca104472.gif");background-position: 0 -63px;background-repeat: no-repeat;display: block;}
+
+#navMidBar{position: absolute;top: 102px;bottom: 5px;left: 0; right: 0;display: block;}
+.fdul{border-bottom: 1px solid #e2e2e2;}
+.fn{background:url("images/select104473.gif"); background-repeat: no-repeat;margin: 0 5px;}
+.fn a{display: block;height: 22px;color: #fff;padding-left: 20px;}
+.fm{line-height: 20px;margin-left: 5px;}
+.fm a{padding-left: 20px;height: 20px;color: #3B5999;display: block;font-weight: bold;font-family: "lucida Grande",Verdana;font-size: 12px;font-weight: normal;}
+li.fm,li.fn{height: 22px;line-height: 20px;padding: 0 2px 0 0px;margin-bottom: 1px;}
+#navBottomTd{}
+.fm5t{margin-top: 5px;}
+.fm5b{margin-bottom: 5px;}
+
+#right{position: absolute;left: 192px;top: 77px;right: 0;bottom: 0;}
+.rightContain{padding: 3px 7px 6px 4px;width: auto;height: auto;min-width: 670px;overflow-x:auto; }
+.textTittle{font-size: 14px;margin: 4px 0px 5px 8px;font-weight: bold;color: #133467;display: block;float: left;position: relative;}
+.textTittle span{font-weight: normal;color: #000;font-size: 12px;padding-left: -1px;}
+
+.toolbgline{background: url("images/tool_bg104473.gif");border-bottom: 1px solid #C8CFDA;}
+.toolheight{padding: 5px 7px;}
 
 
 
