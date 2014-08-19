@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0;}
+body{font-size: 12px;font-family: "lucida Grande",Verdana;}
+li,ul{list-style: none;}
+a{text-decoration: none;}
+
+#main{width: 100%;height: 100%;position: relative;}
+#topNav{width: 100%;height: 66px;}
+.logoTips{position: absolute;left: 5px;}
+.logo{width: 215px;height: 60px;display: block;float: left;background: url("images/logo_80_0104473.gif");cursor: pointer;}
+.switch{display: block;float: left;margin: 12px 0 0;line-height: 18px;}
+.switchContent{margin-top: 1px;}
+.pointer{cursor: pointer;}
+#userAddrArrow{font-size: 11px;font-family: Arial,sans-serif;padding-bottom: 5px;opacity: 0.5;}
+.addrTittle{color: #9399a7;}
+.addrTittle a{color: #4E5D80;}
+.addrTittle a:hover{text-decoration: underline;}
+
+
+
+.help{position: absolute;}
+.topLine{position:absolute;top:66px;left:0;right:0;width: auto;border-left: 8px solid #fff;height: 11px;border-right: 0;
+	background: url("images/nav_bg104470.gif");background-repeat: repeat-x;background-position: 0 -107px;background-color: transparent;}
+.topLineImg{width: 184px;height: 22px;float: left;background: url("images/topline104470.gif");background-position:-179px 0;background-color: transparent;}
+#left{width: 179px;position: absolute;top: 77px;bottom: 0;display: block;border-left: 8px solid #fff;border-right: 1px solid #9b9b9b;}
+
+
+
+
+
+
+
+
+
+
+

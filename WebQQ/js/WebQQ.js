@@ -105,85 +105,88 @@ $(function(){
 
 function chathtml(){
 	$(".chatA").click(function(){
-
 		var cAname=$(this).attr("friendName");
-
 		//var headerpic=$(this).find(".avatar").html();
+		var isappear = $(this).attr("isappear");
 
-	var chathtmlA="";
+		if(isappear=="yes")
+		{
+			$("chat-panel").show();
+			// //$("#min" + talkid).hide();
+			
+			$(".chat-panel").css("z-index","10");
+			$("friendName").css("z-index","12");
+			return;
+		}
+		var chathtmlA="";
 
-		chathtmlA +='					<div class="chat-panel">													';													
-		chathtmlA +='					<div class="panel-header backColor">										';
-		chathtmlA +='						<h1 class="chatName">'+ cAname +'</h1>															';
-		chathtmlA +='						<button  class="min btn backColor"><span>－</span></button>		';
-		chathtmlA +='						<button  class="close btn backColor"><span>ｘ</span></button>		';
-		chathtmlA +='					</div>																		';
+			chathtmlA +='				<div class="chat-panel">														';													
+			chathtmlA +='					<div class="panel-header backColor">										';
+			chathtmlA +='						<h1 class="chatName">'+ cAname +'</h1>															';
+			chathtmlA +='						<button  class="min btn backColor"><span>－</span></button>		';
+			chathtmlA +='						<button  class="close btn backColor"><span>ｘ</span></button>		';
+			chathtmlA +='					</div>																		';
 
-		chathtmlA +='					<div class="main-chat">														';
-		chathtmlA +='						<div class="chat-container"></div>										';
-		chathtmlA +='					</div>																		';
+			chathtmlA +='					<div class="main-chat">														';
+			chathtmlA +='						<div class="chat-container"></div>										';
+			chathtmlA +='					</div>																		';
 
-		chathtmlA +='						<div class="chat-footrt ">												';
-		chathtmlA +='							<div class="chat-foot-content">										';
-		chathtmlA +='								<div class="shuru backColor">									';
-		chathtmlA +='									<div id="add-face-btn">										';
-		chathtmlA +='										<span class="add-face-btn-icon"></span>					';
-		chathtmlA +='									</div>														';
-		chathtmlA +='									<div class="chat-textarea">									';
-		chathtmlA +='										<textarea id="textarea"></textarea>						';
-		chathtmlA +='									</div>														';
-		chathtmlA +='									<button id="send-chat-btn">									';
-		chathtmlA +='										<span class="btn-text">发送</span>						';
-		chathtmlA +='									</button>													';
-		chathtmlA +='								</div>															';
-		chathtmlA +='								<div class="biaoqing"></div>									';
-		chathtmlA +='							</div>																';
-		chathtmlA +='						</div>																	';
-		chathtmlA +='					</div>																		';
-
-
+			chathtmlA +='						<div class="chat-footrt ">												';
+			chathtmlA +='							<div class="chat-foot-content">										';
+			chathtmlA +='								<div class="shuru backColor">									';
+			chathtmlA +='									<div id="add-face-btn">										';
+			chathtmlA +='										<span class="add-face-btn-icon"></span>					';
+			chathtmlA +='									</div>														';
+			chathtmlA +='									<div class="chat-textarea">									';
+			chathtmlA +='										<textarea id="textarea"></textarea>						';
+			chathtmlA +='									</div>														';
+			chathtmlA +='									<button id="send-chat-btn">									';
+			chathtmlA +='										<span class="btn-text">发送</span>						';
+			chathtmlA +='									</button>													';
+			chathtmlA +='								</div>															';
+			chathtmlA +='								<div class="biaoqing"></div>									';
+			chathtmlA +='							</div>																';
+			chathtmlA +='						</div>																	';
+			chathtmlA +='					</div>																		';
+		
 		$("#subContainer").append(chathtmlA);
+		$(this).attr("isappear","yes");
+		$(".chat-panel").css("z-index","10");
+		$("friendName").css("z-index","12");
 
 
 		//出现在随机的位置
-		var randomleft= (Math.random()+5)*100;
+		var randomleft= (Math.random()+2)*50;
 		//alert(randomleft);
-		var randomtop= (Math.random()*2)*45;
+		var randomtop= (Math.random()+1)*50;
 		//alert("left:"+randomleft);
-		$(".chat-panel").css({
+		$("friendName").css({
 			"left":randomleft+"px",
 			"top":randomtop+"px"
 			/*"left":"620px",
 			"top":"80px"*/
 		});
 
-
-
-
-
-
-
-
-
-
+		//聊天框最上面
+		$("friendName").click(function(){
+			$(".chat-panel").css("z-index","10");
+			$(this).css("z-index","12");
+		});
 
 
 		//关闭聊天框
 		$(".close").click(function(){
 			$(this).parent().parent().hide();
+			
 		});
 
 
-		 $(function() {
+		$(function() {
 			$( ".chat-panel" ).draggable({ handle: ".panel-header",containment: "#subContainer", scroll: false  });
 		});
 		$(function() {
 			 $( ".chat-panel" ).resizable();
 		});
 
-
-
-
 	});
-
 }
