@@ -1,0 +1,66 @@
+*{margin: 0;padding: 0;}
+body{font-family: arial,"Microsoft YaHei";font-size: 12px;background: #fff;color: #000;text-align: left;line-height: 150%;}
+li,ul{list-style: none;}
+a{text-decoration: none;outline: none;}
+div{display: block;margin: 0;padding: 0;}
+
+.head{width: 100%;position: relative;z-index: 1000;}
+.head-top{height: 32px;border-bottom: 1px solid #ddd;background: #f4f4f4;}
+.head-logo{position: relative;padding: 15px 0 25px 0;height: 55px;}
+.head-nav{background: #000;width: 100%;height: 40px;}
+
+/*head-top*/
+.screen{width: 1150px;margin: 0 auto;}
+.left{float: left;}
+.right{float: right;}
+.site-list li{float: left;line-height: 32px;}
+.site-list li.curr{background: #fff;border-left: 1px solid #ddd;border-right: 1px solid #ddd;border-bottom: 1px solid #fff;}
+.site-list li a{padding: 0 15px;color: #000;}
+.site-list li a:hover{text-decoration: underline;}
+
+.top-list li.list{float: left;padding: 0 1px;border-left: 1px solid#f4f4f4;border-right: 1px solid #f4f4f4;}
+.top-list li.list a{padding:0 5px;line-height: 32px;display: inline-block;}
+.top-list li.list a.login-out{color: #006699;cursor: pointer;}
+.top-list li.list a.login-out:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
