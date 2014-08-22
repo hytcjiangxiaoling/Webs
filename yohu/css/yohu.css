@@ -2,7 +2,7 @@
 body{font-family: arial,"Microsoft YaHei";font-size: 12px;background: #fff;color: #000;text-align: left;line-height: 150%;}
 li,ul,dl{list-style: none;}
 a{text-decoration: none;outline: none;cursor: pointer;}
-div{display: block;margin: 0;padding: 0;}
+div,dl{display: block;margin: 0;padding: 0;}
 img{border: 0;vertical-align: middle;outline: none;}
 
 
@@ -14,13 +14,28 @@ img{border: 0;vertical-align: middle;outline: none;}
 .head-logo{position: relative;padding: 15px 0 25px 0;height: 55px;}
 .head-nav{background: #000;width: 100%;height: 40px;}
 
-
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.wrap{
+	width: 1150px;
+	margin: 0 auto;
+}
 .screen{
 	width: 1150px;
 	margin-left:auto;
 	margin-right: auto;
 }
 .left{
+	display: block;
 	float: left;
 }
 .right{
@@ -28,6 +43,9 @@ img{border: 0;vertical-align: middle;outline: none;}
 }
 .center{
 	text-align: center;
+}
+.relative{
+	position: relative;
 }
 
 
@@ -91,7 +109,7 @@ img{border: 0;vertical-align: middle;outline: none;}
 }
 
 /*head-nav*/
-.nav-bar{position: relative;z-index: 100;}
+.nav-bar{/*position: relative;*/z-index: 100;}
 .nav-bar li a.a-list{
 	margin-right: 43px;
 	margin-left: 42px;
@@ -106,11 +124,51 @@ img{border: 0;vertical-align: middle;outline: none;}
 .nav-bar li.last a.a-list{
 	margin-right: 0;
 }
+.nav-bar li.cur span{
+	padding-bottom: 3px;
+	border-bottom: 2px solid #fff;
+}
+/*导航菜单*/
+.nav-panel{
+	box-shadow: 0 0 3px 0 #666;
+	background: #fff;
+	position: absolute;
+	top: 168px;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 30px 0;
+	display: none;
+}
+.nav-panel ol{
+	width: 150px;
+	float: left;
+	padding-right: 10px;
+}
+.nav-panel ol li{
+	line-height: 38px;
+	height: 38px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.nav-panel ol li:hover{
+	text-decoration: underline;
+}
+.nav-panel .cate-ads{
+	float: right;
+}
+.nav-panel .cate-ads img{
+	width: 345px;
+	height: 230px;
+}
+
+
 
 
 
 
 .wrapper{
+	display: block;
 	margin: 0 auto 15px auto;
 }
 .wrapper-index2{
@@ -224,13 +282,34 @@ img{border: 0;vertical-align: middle;outline: none;}
 	line-height: 18px;
 	font-weight: bold;
 }
+
 .dl-index dt .keys a{
 	color: #000;
 	padding: 0 10px;
-	cursor: auto;
+	cursor: pointer;
+}
+.dl-index dt .keys a:hover{
+	text-decoration: underline;
 }
 .dl-index dt .keys span{
 	color: #eee;
+}
+.dl-index .hot-hand li{
+	float: left;
+	margin: 0 2px 2px 0;
+}
+.index-unit5 .hot-hand a img{
+	width: 190px;
+	height: 190px;
+}
+.index-unit5 .hot-hand a img:hover{
+	opacity: 0.8;
+}
+.index-unit5 .hot-hand .li-v-2 a img{
+	height: 382px;
+}
+.index-unit5 .hot-hand .li-h-2 a img{
+	width: 382px;
 }
 
 .index-unit5{
@@ -242,8 +321,243 @@ img{border: 0;vertical-align: middle;outline: none;}
 .index-unit5 .hot-hand{
 	height: 384px;
 }
+.index-unit5 .hot-hand .li-v-2{
+	float: right;
+}
+.index-unit1{
+	width: 190px;
+}
+.index-unit1 .hot-hand li{
+	padding: 0 0 2px 0;
+}
+.dl-index .hot-hand li .btn-page{
+	padding: 50px 0 0 50px;
+	width: 140px;
+	height: 140px;
+	background: #f4f4f2;
+}
+.dl-index .hot-hand .before{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	outline: none;
+	top: 8px;
+	left: 2px;
+}
+.dl-index .hot-hand .next{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	outline: none;
+	top: 42px;
+	left: 48px;
+}
+#recommend-1{
+	display: block;
+}
+#recommend-2{
+	display: none;
+}
+/*人气单品*/
+.dl-index .index-ul li{
+	float: left;
+	margin: 0 2px 2px 0;
+}
+.index-ul li a img{
+	width: 190px;
+	height: 240px;
+}
+.index-ul li a img:hover{
+	opacity: 0.8;
+}
+.index-ul .li-h-2 a img{
+	width: 382px;
+}
+.index-ads{
+	margin-top: 16px;
+}
+.index-ads img{
+	width: 190px;
+	margin-bottom: 2px;
+}
+.index-ads img:hover{
+	opacity: 0.8;
+}
+.index-ads .ads-1 img{
+	height: 320px;
+}
+.index-ads .ads-2 img{
+	height: 190px;
+}
+/*潮流上装*/
+.dl-index .category-top img{
+	width: 190px;
+	height: 170px;
+}
+.dl-index .category-list{
+	width: 100%;
+	background: #f8f8f8;
+	padding: 8px 0;
+}
+.dl-index .category-list li{	
+	float: left;
+	margin-right: 5px;
+	overflow: hidden;
+	width: 90px;
+}
+.dl-index .category-list li a{
+	position: relative;
+	color: #ff0000;
+	display: block;
+	outline: hidden;
+	padding: 0 0 0 15px;
+	height: 28px;
+	line-height: 28px;
+}
+.dl-index .category-list li a:hover{
+	text-decoration: underline;
+}
+.dl-index .category-list .hot{
+	position: absolute;
+	left: 45px;
+	top: 5px;
+	display: inline-block;
+	float: left;
+	-webkit-transform: scale(0.8);
+	background: #ff0000;
+	color: #fff;
+	padding: 2px 3px;
+	font-size: 10px;
+	display: block;
+	margin-left: 5px;
+	height: 14px;
+	line-height:14px;
+}
+.dl-index .brands-list{
+	width: 100%;
+	background: #f2f2f2;
+	padding: 8px 0;
+}
+.dl-index .brands-list li a{
+	color: #ff0000;
+	display: block;
+	outline: hidden;
+	line-height: 28px;
+	height: 28px;
+	padding: 0 15px 0 15px;
+}
+.dl-index .brands-list li a:hover{
+	text-decoration: underline;
+}
 
+/*广告*/
+.index-banner{
+	width: 100%;
+	margin-top:20px;
+}
+.index-banner img:hover{
+	opacity: 0.8;
+}
 
+/*有货APP*/
+.index-foot{
+	background: #ffffff;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.index-foot dd{
+	margin-right: 20px;
+	float: left;
+	width: 370px;
+}
+.index-foot dd .foot-panel{
+	background: #fff;
+	padding: 20px;
+}
+.index-foot dd .tittle{
+	text-align: center;
+}
+.index-foot dd .tittle .tittle-line{
+	border-bottom: 1px solid #dddddd;
+	position: absolute;
+	top: 9px;
+	left:0;
+	right: 0;
+}
+.index-foot dd .tittle .text{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 0;
+}
+.index-foot dd .tittle .text span{
+	background: #fff;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 0 10px;
+}
+.index-foot dd ul{
+	margin-top: 18px;
+	padding-top: 18px;
+}
+.index-foot dd .two-dim{
+	margin-right: -10px;
+	height: 131px;
+	overflow: hidden;
+}
+.index-foot dd .two-dim li{
+	border: 1px solid #ddd;
+	padding: 7px;
+	margin-right: 10px;
+}
+.index-foot dd .two-dim li a{
+	display: block;
+}
+.index-foot dd .two-dim li p{
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 3px;
+	line-height: 12px;
+}
+.index-foot dd .two-dim img{
+	width: 87px;
+	height: 87px;
+}
+.index-foot .last{
+	margin-right: 0px;
+}
+.index-foot .vote{
+	height: 131px;
+	line-height: 2px;
+}
+.index-foot .vote input{
+	margin: 0 5px 0 1px;
+	border: 0;
+}
+.index-foot .vote-item p{
+	float: left;
+	width: 50%;
+	height: 24px;
+	overflow: hidden;
+}
+
+.index-foot ul .chanpin{
+	margin-right: -10px;
+	height: 131px;
+	overflow: hidden;
+}
+.index-foot .chanpin li{
+	margin-right: 10px;
+	float: left;
+	margin-bottom: 12px;
+}
+.index-foot .chanpin li img{
+	width: 100px;
+	height: 131px;
+}
 
 
 
