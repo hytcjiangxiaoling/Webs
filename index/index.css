@@ -1,5 +1,13 @@
 div{text-align:center;font-size: 12px;}
-body{text-align: center;font-size: 12px;font-family: 宋体,Arial;background:linear-gradient(#EBEBEB,#ffffff);}
+body{
+	text-align: center;
+	font-size: 12px;
+	font-family: 宋体,Arial;
+	/*background:linear-gradient(#EBEBEB,#ffffff);*/
+	background-color:#eee; 
+	background-image: url("images/5-13050GTG0.gif");
+	background-repeat: repeat;
+}
 ul,li{ list-style: none; list-style-position: outside; }
 *{margin: 0;padding: 0;}
 a{text-decoration: none;}

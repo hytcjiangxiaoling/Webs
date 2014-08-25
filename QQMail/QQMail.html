@@ -4,147 +4,477 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="css/QQMail.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	 <script type="text/javascript" src="js/QQMail.js"></script>
+	<script type="text/javascript" src="js/MailQQ.js"></script>
 </head>
 <body>
 	<div id="main">
+	<!-- 邮箱顶部 -->
 		<div id="topNav">
-			<div class="logoTips">
-				<div class="logo"></div>
-				<div class="switch">
-					<div class="switchContent">
-						<b id="userName">Mischief。</b>
-						<span id="userAddrContainer" class="pointer">
-							<
-							<span>crispy@vip.qq.com</span>
-							>
-						</span>
-						<span id="userAddrArrow" class="pointer">▼</span>
-						<br>
-						<span class="addrTittle">
-							<a href="#">邮箱首页</a>
-							|
-							<a href="#">设置</a>
-							-
-							<a href="#">换肤</a>
-						</span>
-					</div>
+			<div class="logo"></div>
+			<div class="info">
+				<div class="userInfo">
+					<b id="userName">Mischief。</b>
+				</div>
+				<div class="userInfo">
+					<span class="pointer">
+						<span><</span>
+						<span>crispy@vip.qq.com</span>
+						<span>></span>				
+					</span>
+				</div>
+				<span id="userAddrArrow" class="pointer">▼</span>
+				<span></span>
+				<div class="userInfo">
+					<span class="addrTittle">
+						<a class="pointer">邮箱首页</a>
+						|
+						<a class="pointer">设置</a>
+						-
+						<a class="pointer">换肤</a>
+					</span>
 				</div>
 			</div>
-			<div class="help"></div>
+			<div class="top-right"></div>
 		</div>
-		<div class="topLine">
-			<div class="topLineImg"></div>
-		</div>
-		<div id="left">
-			<div id="navBarDiv">
-				<ul class="navBar">
-					<li class="compose fs">
+		<div class="topLine"></div>
+	<!-- 左侧菜单 -->
+		<div class="index-left">
+			<div class="menu-top">
+				<ul>
+					<li class="compose">
+						<a class="composeBtn"></a>
 						<a href="#">写信</a>
-						<span class="composeBtn"></span>
 					</li>
-					<li class="check fs">
+					<li class="check">
+						<a class="checkBtn"></a>
 						<a href="#">收信</a>
-						<span class="checkBtn"></span>
 					</li>
-					<li class="address fs">
+					<li class="address">
+						<a class="addrBtn"></a>
 						<a href="#">通讯录</a>
-						<span class="addrBtn"></span>
 					</li>
 				</ul>
 			</div>
-			<div id="navMidBar">
-				<div id="sysFloderList">
-					<ul class="fdul">
-						<li id="folder_1_td" class="fn"><a href="#">收件箱</a></li>
-						<li id="folder_2_td" class="fm"><a href="#">星标邮件</a></li>
-						<li id="folder_3_td" class="fm"><a href="#">群邮件</a></li>
-						<li id="folder_4_td" class="fm"><a href="#">草稿箱</a></li>
-						<li id="folder_5_td" class="fm"><a href="#">已发送</a></li>
-						<li id="folder_6_td" class="fm"><a href="#">已删除</a></li>
-						<li id="folder_7_td" class="fm"><a href="#">垃圾箱</a></li>
-						<li id="folder_8_td" class="fm"><a href="#">QQ邮件订阅</a></li>
-					</ul>
-				</div>
-				<div id="scrollFloder">
-					<ul class="fdul">
-						<li class="fm fm5t"><a href="#">我的文件夹</a></li>
-						<li class="fm fm5b"><a href="#">其他邮箱</a></li>
-					</ul>
-					<ul class="fdul">
-						<li class="fm"><a href="#">漂流瓶</a></li>
-						<li class="fm"><a href="#">贺卡|明信片</a></li>
-						<li class="fm"><a href="#">日历|记事本</a></li>
-						<li class="fm"><a href="#">附件收藏</a></li>
-						<li class="fm"><a href="#">文件中转站</a></li>
-					</ul>
-				</div>
+			<div class="menu-main">
+				<ul class="fdul">
+					<li id="folder_1_td" class="fn blod"><a href="#">收件箱</a></li>
+					<li id="folder_2_td" class="fm"><a href="#">星标邮件</a></li>
+					<li id="folder_3_td" class="fm"><a href="#">群邮件</a></li>
+					<li id="folder_4_td" class="fm"><a href="#">草稿箱</a></li>
+					<li id="folder_5_td" class="fm"><a href="#">已发送</a></li>
+					<li id="folder_6_td" class="fm"><a href="#">已删除</a></li>
+					<li id="folder_7_td" class="fm blod"><a href="#">垃圾箱</a></li>
+					<li id="folder_8_td" class="fm blod"><a href="#">QQ邮件订阅</a></li>
+				</ul>
 			</div>
-			<div id="navBottomTd"></div>
+			<div class="sepline"></div>
+			<div class="menu-middle"></div>
+			<div class="sepline"></div>
+			<div class="menu-bottom"></div>
 		</div>
-		<div id="right">
-			<div class="rightContain">
+	<!-- 右侧列表 -->
+		<div class="index-right">
+			<div class="main-container">
 				<div class="txt-tittle">
-					<div class="textTittle">
-						收件箱
-						<span>(共&nbsp366&nbsp封)</span>
+					<div class="somail">收件箱</div>
+					<div class="somail-content">
+						<span>&nbsp;(共&nbsp;</span>
+						<span>294</span>
+						<span>&nbsp;封,其中</span>
+						<a class="green pointer">未读邮件</a>
+						<span>6</span>	
+						<span>封)</span>					
 					</div>
-				</div>	
-				<div class="nowrap">
-					<div class="toolbg toolheight toolbgline">
-						<div class="nowrapLeft">
-							<a class="btn_gray" href="#">删除</a>
-							<a class="btn_gray" href="#">彻底删除</a>
-							<a class="btn_gray" href="#">转发</a>
-							<a class="btn_gray" href="#">举报</a>
-							<a class="btn_gray" href="#">全部标记为已读</a>
-							<a class="btn_gray" href="#">标记为...</a>
-							<a class="btn_gray" href="#">移动到...</a>
+				</div>
+				<div class="form">
+					<div class="tool">
+						<a class="btn-01">删除</a>
+						<a class="btn-01">彻底删除</a>
+						<a class="btn-01">转发</a>
+						<a class="btn-01">举报</a>
+						<a class="btn-01 qbbjyd">全部标为已读</a>
+						<span class="bjw">
+							<a class="btn-01">标记为...</a>
+							<ul>
+								<li class="bj-yd"><a>已读邮件</a></li>
+								<li class="bj-wd"><a>未读邮件</a></li>
+								<div class="sepline-02"></div>
+								<li class="bj-gg"><a>广告邮件</a></li>
+								<div class="sepline-02"></div>
+								<li class="bj-xb"><a>星标邮件</a></li>
+								<li class="bj-qx"><a>取消星标</a></li>
+								<div class="sepline-02"></div>
+								<li class="bj-xj"><a>新建标签</a></li>
+							</ul>
+						</span>
+						<a class="btn-01">移动到...</a>
+					</div>
+					<div class="table-tittle">
+						<ul>
+							<li class="tt-01"><input class="check-all-box" type="checkbox" choose="true"></li>
+							<li class="tt-02"></li>
+							<li class="tt-03"><a>发件人</a></li>
+							<li class="tt-04"><a>主题</a></li>
+							<li class="tt-05"><a>时间</a></li>
+							<li class="tt-06"><a>大小</a></li>
+							<li class="tt-07"></li>
+						</ul>
+					</div>
+				<!-- 今天 -->
+					<div class="date-tittle">
+						<div class="date-left"><b>今天</b></div>
+						<div class="date-right">
+							<span>
+								(
+								<span class="pointer underline">1封</span>
+								)
+							</span>
 						</div>
-						<div class="nowrapRight"></div>
 					</div>
-				</div>
-				<table class="tableTittle">
-					<tbody>
-						<tr>
-							<td class="td-tittle">
-								<input type="checkbox">
-							</td>
-							<td class="td-tittle">
-								<input type="botton" class="icon-mailtittle" disabled>
-							</td>
-							<td class="td-tittle" style="width:135px;">
-								<a>发件人</a>
-							</td>
-							<td class="td-tittle" style="width:723px;">
-								<a>主题</a>
-							</td>
-							<td class="td-tittle" style="width:102px;">
-								<a>时间</a>
-							</td>
-							<td class="td-tittle" style="width:48px;">
-								<a>大小</a>
-							</td>
-							<td class="td-tittle">&nbsp;</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="bd talk">
-					<a class="cur_default">
-						<label>
-							<b>今天</b>
-							(
-							<span class="newfd">2 封</span>
-							)
-						</label>
-					</a>
-				</div>
-				
-			</div>
+					<ul>
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>广告邮件</a></div>
+								<div class="t t2 pointer blue"><a>QQ团购: 苏州站 - 【齐菲却男士商务长袖衬衫 天然高…】【微信电影票】【多功能大号棉被收纳袋】【公蟹3.1-2.6母蟹</a></div>
+								<div class="t t3 pointer"><a>3小时前</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+					</ul>
+				<!-- 上周 -->
+					<div class="date-tittle">
+						<div class="date-left"><b>上周</b></div>
+						<div class="date-right">
+							<span>
+								(
+								<span class="pointer underline">9封</span>
+								)
+							</span>
+						</div>
+					</div>
+					<ul>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>QQ安全中心</a></div>
+								<div class="t t2 pointer"><a>好友辅助申诉邀请（请勿回复此邮件）</a><a class="mail-txt">&nbsp;-&nbsp;aq.qq.com 在线生活，安全护航 尊敬的QQ用户：您的QQ好友蝉想(4*******8)正在申诉，迫切需要您的帮助。</a></div>
+								<div class="t t3 pointer"><a>昨天19:39</a></div>
+								<div class="t t4 pointer"><a>3.5K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>携程旅行网</a></div>
+								<div class="t t2 pointer"><a>银行卡体现成功通知</a><a class="mail-txt">&nbsp;-&nbsp;如果邮件无法显示，请点击这里>>银行卡提现成功通知 尊敬的用户M73492872 ，您好！很高兴通知您以下提现申请已经处理完成：</a></div>
+								<div class="t t3 pointer"><a>8月22日</a></div>
+								<div class="t t4 pointer"><a>6.7K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>	
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月21日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月21日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户改签通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月21日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月21日</a></div>
+								<div class="t t4 pointer"><a>11K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>	
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户退票通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月21日在中国铁路客户服务中心网站(www.12306.cn)成功办理了退票业务， 订单号码E203095200。</a></div>
+								<div class="t t3 pointer"><a>8月21日</a></div>
+								<div class="t t4 pointer"><a>7.5K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>	
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>携程旅行网</a></div>
+								<div class="t t2 pointer"><a>★携程旅行网7月电子对账单,1元门票,想游就游!</a><a class="mail-txt">&nbsp;-&nbsp;电子账单帮您及时了解账户余额 我要投诉 >为确保此邮件正常接收，建议将info@ctrip.com添加到邮箱的联系人列表。</a></div>
+								<div class="t t3 pointer"><a>8月21日</a></div>
+								<div class="t t4 pointer"><a>152K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>	
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>						
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月19日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月19日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+					</ul>
+				<!-- 更早 -->
+					<div class="date-tittle">
+						<div class="date-left"><b>更早</b></div>
+						<div class="date-right">
+							<span>
+								(
+								<span class="pointer underline">15封</span>
+								)
+							</span>
+						</div>
+					</div>
+					<ul>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>芒果网</a></div>
+								<div class="t t2 pointer"><a>201408芒果月刊</a><a class="mail-txt">&nbsp;-&nbsp; 如无法打开电邮，请点击这里登录[我的帐户]热点推荐芒果积分商城：积分换购礼品超值巨惠更环保。</a></div>
+								<div class="t t3 pointer"><a>8月13日</a></div>
+								<div class="t t4 pointer"><a>26K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>GitHub</a></div>
+								<div class="t t2 pointer"><a>[GitHub] Please verify your email '296528724@qq.com'</a><a class="mail-txt">&nbsp;-&nbsp;Hey, we want to verify that you are indeed "js8jxl07".  Verifying this address will let you receive notifications and password resets from GitHub.  If you wish to continue, please follow the link below:</a></div>
+								<div class="t t3 pointer"><a>8月12日</a></div>
+								<div class="t t4 pointer"><a>1.3K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>携程旅行网</a></div>
+								<div class="t t2 pointer"><a>★携程旅行网6月电子对账单</a><a class="mail-txt">&nbsp;-&nbsp;电子账单帮您及时了解账户余额 我要投诉 >为确保此邮件正常接收，建议将info@ctrip.com添加到邮箱的联系人列表。 如何添加？</a></div>
+								<div class="t t3 pointer"><a>7月31日</a></div>
+								<div class="t t4 pointer"><a>178K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>网上超市1号店</a></div>
+								<div class="t t2 pointer"><a>1号店订单338114767925积分解冻提醒</a><a class="mail-txt">&nbsp;-&nbsp;亲爱的 ba296802adad8fbc9bb5482662900f29@tencent：您的订单338114767925的积分已解冻！</a></div>
+								<div class="t t3 pointer"><a>7月28日</a></div>
+								<div class="t t4 pointer"><a>85K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea weidu">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>返还网</a></div>
+								<div class="t t2 pointer"><a>您提交了一笔12元(即1200积分)的提现申请</a><a class="mail-txt">&nbsp;-&nbsp;亲爱的js8jxl07：您好！您于2014年07月27日在返还网提交了一笔12元(即1200积分)的提现申请。如非本人操作请立即联系返还网客服，及时为您处理。</a></div>
+								<div class="t t3 pointer"><a>7月27日</a></div>
+								<div class="t t4 pointer"><a>25K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>网上超市1号店</a></div>
+								<div class="t t2 pointer"><a>您在1号店的订单338114767925已成功生成</a><a class="mail-txt">&nbsp;-&nbsp;亲爱的ba296802adad8fbc9bb5482662900f29@tencent：您的订单338114767925已成功生成，如您选择网上支付或者银行转帐，请尽快付款，感谢您的订购。</a></div>
+								<div class="t t3 pointer"><a>7月27日</a></div>
+								<div class="t t4 pointer"><a>52K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士： 您好！您于2014年07月19日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票，票款共计69.50元，订单号码E267499906。所购车票信息如下：</a></div>
+								<div class="t t3 pointer"><a>7月19日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						<li class="toarea">
+							<div class="cx"><input class="checkbox" type="checkbox"></div>
+							<div class="ci">
+								<div class="icon-mail"></div>
+								<div class="icon-fujian"></div>
+							</div>
+							<div class="cn">
+								<div class="t t1 pointer"><a>12306@rails.com.cn <12306@rails.com.cn></a></div>
+								<div class="t t2 pointer"><a>网上购票系统-用户支付通知</a><a class="mail-txt">&nbsp;-&nbsp;尊敬的江晓玲女士：您好！您于2014年08月20日在中国铁路客户服务中心网站（www.12306.cn)成功购买了1张车票</a></div>
+								<div class="t t3 pointer"><a>8月20日</a></div>
+								<div class="t t4 pointer"><a>12K</a></div>
+								<div class="t t5 pointer"><a class="star" star="false"></a></div>
+							</div>
+						</li>
+						
+						
+						
 
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-	
 
 </body>
 </html>
